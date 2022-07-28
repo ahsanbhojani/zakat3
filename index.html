@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="zakat.css">
+</head>
+
+
+<body>
+    <h2>EASY TO + ZAKAT</h2>
+    <h1>GOLD</h1>
+    <Input type="number" id="TOLA1" placeholder="ENTER YOUR GOLD"><br>
+    <br>
+    <h1>SILVER</h1>
+    <Input type="tola" id="TOLA2" placeholder="ENTER YOUR SILVER"><br>
+    <br>
+    <h1>CASH</h1>
+    <input type="amount" id="CASH" placeholder="ENTER YOUR CASH"><br>
+    <br>
+<h1>TOTAL ZAKAT</h1>
+    <button onclick="
+let amount=document.getElementById('CASH').value;
+
+
+let Gold=document.getElementById('TOLA1').value;
+let GoldCash=Gold*120000;
+
+let Silver=document.getElementById('TOLA2').value;
+let SilverCash=Silver*1600;
+
+
+
+let CashD=amount /40;
+let GoldCashD=GoldCash /40;
+let SilverCashD=SilverCash /40;
+ 
+let totalZakat= CashD + GoldCashD + SilverCashD;
+document.getElementById('heading').innerText=totalZakat;">
+        TOTAL ZAKAT
+    </button>
+    <h1 id="heading">0</h1>
+<h2>MADE BY AHSAN JAWAD BHOJANI.</h2>
+</body>
+
+
+</html>
